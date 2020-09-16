@@ -59,7 +59,7 @@ gem 'kaminari-bootstrap', '~> 3.0.1'
 gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
 
 gem 'bootstrap', '~> 4.1.1'
-# ↓↓↓ 24行目に記載されているのでコメントアウト 
+# ↓↓↓ 24行目に記載されているのでコメントアウト
 # gem 'jquery-rails'
 gem 'active_decorator'
 
