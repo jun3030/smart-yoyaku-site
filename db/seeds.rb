@@ -31,3 +31,8 @@ Plan.create!(title: "プロプラン(トライアル)", plan_id: "10000T30D1", c
 Plan.create!(title: "パーソナルプラン", plan_id: "5000D1", charge: 5000, description: "30日のトライアルプランです。３0日後に課金されます。", billing_day: 1)
 Plan.create!(title: "プロプラン", plan_id: "10000D1", charge: 10000, description: "30日のトライアルプランです。３0日後に課金されます。", billing_day: 1)
 Plan.create!(title: "スペシャルプラン", plan_id: "special", charge: 0, description: "期限なしの無料プラン。")
+
+User.create!(name: "sample1", email: "sample1@email.com", line_token: nil, client_id: nil, client_secret: nil, google_api_token: {}, member_id: nil, password: "password", password_confirmation:"password")
+Calendar.create!(calendar_name: "sample1の店舗", start_date: 1, end_date: 7, display_week_term: 3, start_time: 9, end_time: 18, is_released: true, display_time: 5, user_id: 2, created_at: "2020-11-10 04:55:09", updated_at: "2020-11-10 04:55:49", calendar_id: nil, address: "京都府京都市中京区", phone: "09012345678", public_uid: "fe525971", display_interval_time: 10, picture: nil, message: nil)
+Staff.create!(name: "sample1", deleted_at: nil, calendar_id: 2, description: nil, email: "sample1@email.com", line_user_id: nil, client_secret: nil, client_id: nil, google_api_token: nil, google_calendar_id: nil, refresh_token: nil, picture: nil, password: "password", password_confirmation:"password")
+TaskCourse.create!(title: "プラン１", description: "肩こり改善", course_time: 60, calendar_id: 2, charge: "10000", is_tax_included: true, is_more_than: false, picture: nil)
