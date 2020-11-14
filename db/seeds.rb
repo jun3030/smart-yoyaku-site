@@ -39,4 +39,4 @@ Calendar.create!(calendar_name: "sample2の店舗", start_date: 1, end_date: 7, 
 Staff.create!(name: "sample1", deleted_at: nil, calendar_id: 2, description: nil, email: "sample1@email.com", line_user_id: nil, client_secret: nil, client_id: nil, google_api_token: nil, google_calendar_id: nil, refresh_token: nil, picture: nil, password: "password", password_confirmation:"password")
 Staff.create!(name: "sample2", deleted_at: nil, calendar_id: 3, description: nil, email: "sample2@email.com", line_user_id: nil, client_secret: nil, client_id: nil, google_api_token: nil, google_calendar_id: nil, refresh_token: nil, picture: nil, password: "password", password_confirmation:"password")
 TaskCourse.create!(title: "プラン１", description: "肩こり改善", course_time: 60, calendar_id: 2, charge: "10000", is_tax_included: true, is_more_than: false, picture: nil)
-TaskCourse.create!(title: "プラン１", description: "肩たたき", course_time: 60, calendar_id: 3, charge: "10000", is_tax_included: true, is_more_than: false, picture: nil)
+TaskCourse.create!(title: "プラン１", description: "肩たたき", course_time: 60, calendar_id: 3)
