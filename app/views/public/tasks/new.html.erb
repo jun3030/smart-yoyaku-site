@@ -68,6 +68,7 @@
       <% end %>
       <%= hidden_field_tag :task_course_id, @task_course.id %>
       <%= (hidden_field_tag :staff_id, @staff.id) if @staff %>
+      <%= hidden_field_tag :store_id, current_user.id %>
       <div class="task_submit_btn">
         <p>以下のどちらのボタンでも、予約できます。予約完了通知の種類を選べます。</p>
         <button type="submit" class="btn btn-success btn_style btn-block booking_load_btn">予約（通知をLINEで受け取る）</button>
@@ -247,14 +248,14 @@
     if (window.openDatabase) {
     try {
         localStorage.test = 'hoge';
-        
+
     } catch(e) {
         alert("ブラウザのシークレットモードを解除してください。正常に予約ができない場合があります。");
         window.location.href = "<%= calendar_tasks_url(@calendar) %>"
     }
     }
 
-  
+
 </script>
 
 <script>
