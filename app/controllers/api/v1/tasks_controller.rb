@@ -35,10 +35,6 @@ class Api::V1::TasksController < Api::Base
     end
   end
 
-  def history
-  end
-
-
   private
 
     def task_to_json(task)
