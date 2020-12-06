@@ -5,13 +5,13 @@ Rails.application.routes.draw do
   namespace 'api' do
     namespace 'v1' do
       resources :tasks, only: [:index, :show]
-
       resources :task_courses, only: [:index, :create, :update, :destroy]
       resources :staffs, only: [:update]
       resources :users, only: [:create]
       patch "/users", to: "users#update"
       patch "/calendars", to: "calendars#update"
       patch "calendars/update_holiday_flag", to: "calendars#update_holiday_flag"
+      get "/api/v1/store_member/:id/store_member_tasks", to: "store_member_tasks#index"
     end
   end
 # ================================================================================================================-
