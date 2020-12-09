@@ -11,7 +11,7 @@ Rails.application.routes.draw do
       patch "/users", to: "users#update"
       patch "/calendars", to: "calendars#update"
       patch "calendars/update_holiday_flag", to: "calendars#update_holiday_flag"
-      get "store_member/:store_member_id/store_member_tasks", to: "store_member_tasks#index"
+      get "/store_members_tasks", to: "store_member_tasks#index"
     end
   end
 # ================================================================================================================-

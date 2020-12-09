@@ -6,6 +6,7 @@ class CreateStoreMembers < ActiveRecord::Migration[5.2]
       t.integer :age
       t.string :email
       t.string :phone
+
       t.string :line_user_id
 
       t.references :calendar, foreign_key: true
