@@ -17,7 +17,7 @@ class Api::V1::StoreMemberTasksController < ActionController::API
         methods: [:start_at, :end_at],
         only: [:id, :request, :start_at, :end_at],
         include: {
-          calendar: { :only => [:calendar_name, :address, :phone] },
+          calendar: { :only => [:calendar_name, :calendar_id, :phone] },
           task_course: { :only => [:title, :description, :course_time, :charge] },
           store_member: { :only => [:name, :email, :phone, :address] }
         }
