@@ -10,7 +10,8 @@ Rails.application.routes.draw do
       resources :users, only: [:create]
       patch "/users", to: "users#update"
       patch "/calendars", to: "calendars#update"
-      patch "calendars/update_holiday_flag", to: "calendars#update_holiday_flag" 
+      patch "calendars/update_holiday_flag", to: "calendars#update_holiday_flag"
+      get "/store_members_tasks", to: "store_member_tasks#index"
     end
   end
 # ================================================================================================================-
