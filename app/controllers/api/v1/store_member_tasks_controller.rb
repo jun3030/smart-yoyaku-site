@@ -9,7 +9,6 @@ class Api::V1::StoreMemberTasksController < ActionController::API
     render status: 200, json: { status: "200", message: "Loaded Tasks", tasks: JSON.parse(tasks) }
   end
 
-
   private
 
     def task_to_json(task)
